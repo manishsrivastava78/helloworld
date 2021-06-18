@@ -35,7 +35,7 @@ pipeline {
 
         stage('SendNotification') {
           steps {
-            mail(subject: 'Approval for deployment', body: 'Request you to please provide your go ahead for the release to <br> deploy in the production environent.', to: 'manishsrivastava0409@gmail.com')
+            mail(subject: 'Approval for deployment', body: 'Request you to please provide your go ahead for the release to <br> deploy in the production environent.', to: 'manishsrivastava0409@gmail.com', from: 'JenkinsAdmin@ms.com')
           }
         }
 
