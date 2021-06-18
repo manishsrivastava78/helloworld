@@ -25,9 +25,20 @@ pipeline {
     }
 
     stage('Deploy') {
-      steps {
-        input(message: 'Deploy?', ok: 'YES')
-        echo 'Deploying...'
+      parallel {
+        stage('Deploy') {
+          steps {
+            input(message: 'Deploy?', ok: 'YES')
+            echo 'Deploying...'
+          }
+        }
+
+        stage('') {
+          steps {
+            mail(subject: 'Test', body: 'Test', to: 'manishsrivastava78@gmail.com')
+          }
+        }
+
       }
     }
 
