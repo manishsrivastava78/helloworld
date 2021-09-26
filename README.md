@@ -6,9 +6,4 @@ dsfwf
 fdgfdgfdfdsffsfd
 dfsdfsdf
 ffgdfgfdg
-rwererew
-ggdgfdfdgffsdfsfdsfdfewwewewerewrewr
-dsfsf
-fsffdfdf
-dsadadasdsd
-cxczxcxzc
+
